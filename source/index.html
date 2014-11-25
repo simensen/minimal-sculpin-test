@@ -1,0 +1,14 @@
+---
+layout: null
+use:
+    - posts
+---
+
+<ul>
+{% for post in data.posts %}
+    <li>
+        <h1>{{ post.title }}</h1>
+        <div>{{ post.blocks.content|raw }}</h1>
+    </li>
+{% endfor %}
+</ul>
